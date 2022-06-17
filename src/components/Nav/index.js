@@ -1,10 +1,10 @@
 import React from 'react';
+import Contact from '../Contact';
 
 function Nav() {
     return (
         <nav>
             <h1>header inside nav </h1>
-
         <ul>
             <li>
                 <a href="/">about</a>
@@ -13,7 +13,8 @@ function Nav() {
                 <a href="/">projects</a>
             </li>
             <li>
-                <a href="/">contact</a>
+                <Contact />
+                <span>contact</span>
             </li>
         </ul>
 
