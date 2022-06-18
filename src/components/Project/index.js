@@ -1,17 +1,14 @@
 import React from 'react';
+import ProjectList from '../ProjectList';
 
-function Project() {
+function Project(props) {
+    const { selectedProject } = props;
     return (
         <section>
-        <h1>this is the project section.</h1>
-
-            <ul>project one.</ul>
-                <p>project one will have: an image, the title of the project, and links to deployed application and github repo</p>
-            <ul>project two.</ul>
-                <p>project two will have: an image, the title of the project, and links to deployed application and github repo</p>
-            <ul>project three.</ul>
-                <p>project three will have: an image, the title of the project, and links to deployed application and github repo</p>
-
+        <h1>{selectedProject.name}</h1>
+            <a href="/">{selectedProject.deployLink}</a>
+            <a href="/">{selectedProject.githubLink}</a>
+            <ProjectList category={selectedProject.name} />
         </section>
     )
 }
