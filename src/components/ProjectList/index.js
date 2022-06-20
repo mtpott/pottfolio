@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ProjectList = () => {
-    const [currentProject, setCurrentProject] = useState();
+    // const [currentProject, setCurrentProject] = useState();
     const [projects] = useState([
         {
             title: 'Find-A-Pet',

@@ -10,13 +10,10 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
     }
 
     return (
         <div>
-            <h2>contact:</h2>
-            <h2>(NOTE: CONTACT FORM TO BE CONDITIONALLY RENDERED)</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">name:</label>
