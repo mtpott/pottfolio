@@ -10,20 +10,21 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        console.log("you hit the submit button! :) ", formState);
     }
 
     return (
-        <div>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
+        <div className="contact-div">
+            <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="contact-name">
                     <label htmlFor="name">name:</label>
                     <input type="text" defaultValue={name} onChange={handleChange} name="name" />
                 </div>
-                <div>
+                <div className="contact-email">
                     <label htmlFor="email">email address:</label>
                     <input type="email" defaultValue={email} onChange={handleChange} name="email" />
                 </div>
-                <div>
+                <div className="contact-message">
                     <label htmlFor="message">message:</label>
                     <textarea name="message" defaultValue={message} onChange={handleChange} rows="4" />
                 </div>

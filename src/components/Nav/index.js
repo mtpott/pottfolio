@@ -3,7 +3,7 @@ import Contact from '../Contact';
 import Project from '../Project';
 import About from '../About';
 
-function Nav(props) {
+function Nav() {
     const [contactSelected, setContactSelected] = useState(false);
     const [aboutSelected, setAboutSelected] = useState();
     const [projectSelected, setProjectSelected] = useState();
@@ -12,51 +12,50 @@ function Nav(props) {
         setContactSelected(true);
         setAboutSelected(false);
         setProjectSelected(false);
-        renderNav();
     }
 
     const handleAboutClick = event => {
         setAboutSelected(true);
         setContactSelected(false);
         setProjectSelected(false);
-        renderNav();
     }
 
     const handleProjectClick = event => {
         setProjectSelected(true);
         setAboutSelected(false);
         setContactSelected(false);
-        renderNav();
-    }
-
-    const renderNav = () => {
-        if(handleAboutClick) {
-            return (aboutSelected && <About />);
-        } else if (handleContactClick) {
-            return (contactSelected && <Contact />);
-        } else {
-            return (projectSelected && <Project />);
-        }
     }
 
     return (
+    <section>
         <nav className='nav-bar'>
         <ul className="nav-ul">
-            <li className="mx-1 nav-link">
+            <li className="nav-link">
                 <a href="#about" onClick={handleAboutClick}>about</a>
-                    {aboutSelected && (<About />)}
             </li>
-            <li className="mx-1 nav-link">
+            <li className="nav-link">
                 <a href="#project" onClick={handleContactClick}>projects</a>
-                    {contactSelected && (<Project />)}
             </li>
-            <li className="mx-1 nav-link">
+            <li className="nav-link">
                 <a href="#contact" onClick={handleProjectClick}>contact</a>
-                    {projectSelected && (<Contact />)}
+                    
             </li>
         </ul>
-
         </nav>
+
+        <section className="about-section">
+            {aboutSelected && (<About />)}
+        </section>
+
+        <section className="project-section">
+            {contactSelected && (<Project />)}
+        </section>
+
+        <section className="contact-section">
+            {projectSelected && (<Contact />)}
+        </section>
+
+    </section>
     )
 }
 

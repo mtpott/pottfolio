@@ -1,41 +1,76 @@
+* {
+  font-family: 'Signika', sans-serif;
+  background-color: #edf0da;
+  color: #363537;
+}
+
 .header-name {
   font-size: 25px;
-  color: rgb(83, 83, 206);
+  color: #A07178;
   display: inline;
 }
 
-.header-section {
-  border-bottom: solid black 2px;
-}
-
-.mx-1 {
-  margin-left: 25px;
-  color: pink;
-}
-
-.nav-bar {
+/* .nav-bar {
   white-space: nowrap;
+} */
+
+.nav-ul {
+  list-style: none;
+  display: flex;
 }
 
 .nav-link {
+  margin: 10px;
+  justify-content: space-between;
+  text-align: right;
+}
+
+a {
   display: inline;
   list-style: none;
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: #037971;
 }
 
 .about-div {
-  max-width: 600px;
+  max-width: 700px;
   display: block;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .about {
   font-size: 20px;
+  display: inline-block;
 }
 
 .about-pg {
   font-size: 18px;
+  display: inline-block;
+}
+
+.contact-div {
+  text-align: center;
+
 }
 
 .contact-form {
-  display: flex;
+  display: inline-block;
+  text-align: left;
+}
+
+.contact-name {
+  margin: 10px;
+}
+
+.contact-email {
+  margin: 10px;
+}
+
+.contact-message {
+  margin: 10px;
 }

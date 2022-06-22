@@ -25,17 +25,21 @@ const ProjectList = () => {
         }
     ])
 
-    const project = projects.filter((photo) => photo.category === photo);
+    // const project = projects.filter((project) => p.category === photo);
+    const projectObj = projects.filter((project) => (
+        <div>{projectObj}</div>
+    ))
 
     return (
         <div>
-            {project.map((photo, i) => (
+            {projectObj}
+            {/* {project.map((photo, i) => (
                 <img
                     src={require(`../../assets/project-img/${photo}/${i}.jpg`)}
                     alt={photo.i}
                     key={photo.i}
                     />
-            ))}
+            ))} */}
         </div>
     );    
 }
