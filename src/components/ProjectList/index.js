@@ -10,29 +10,26 @@ const ProjectList = () => {
         },
         {
             title: 'Coin-Vault',
-            deployLink: '',
-            githubLink: ''
+            deployLink: 'https://the-coin-vault.herokuapp.com/',
+            githubLink: 'https://github.com/ApolloSolo/Coin-Vault'
         },
         {
             title: 'project 3',
-            deployLink: '',
-            githubLink: ''
+            deployLink: 'link.com/link',
+            githubLink: 'link.com/link'
         },
         {
             title: 'project 4',
-            deployLink: '',
-            githubLink: ''
+            deployLink: 'link.com/link',
+            githubLink: 'link.com/link'
         }
     ])
 
-    // const project = projects.filter((project) => p.category === photo);
-    const projectObj = projects.filter((project) => (
-        <div>{projectObj}</div>
-    ))
+    let selectedProject = projects.filter(project => project.title)
 
     return (
         <div>
-            {projectObj}
+            {selectedProject.map(project => <p>{project.title, project.deployLink, project.githubLink}</p>)}
             {/* {project.map((photo, i) => (
                 <img
                     src={require(`../../assets/project-img/${photo}/${i}.jpg`)}
