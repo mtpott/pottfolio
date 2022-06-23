@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 
-const ProjectList = () => {
-    // const [currentProject, setCurrentProject] = useState();
+const ProjectList = (proj) => {
+    const [currentProject, setCurrentProject] = useState();
     const [projects] = useState([
+        {
+            title: 'Run-Buddy',
+            deployLink: 'https://mtpott.github.io/run-buddy/',
+            githubLink: 'https://github.com/mtpott/run-buddy'
+        },
         {
             title: 'Find-A-Pet',
             deployLink: 'https://scottietee.github.io/Find-A-Pet/',
@@ -12,33 +17,29 @@ const ProjectList = () => {
             title: 'Coin-Vault',
             deployLink: 'https://the-coin-vault.herokuapp.com/',
             githubLink: 'https://github.com/ApolloSolo/Coin-Vault'
-        },
-        {
-            title: 'project 3',
-            deployLink: 'link.com/link',
-            githubLink: 'link.com/link'
-        },
-        {
-            title: 'project 4',
-            deployLink: 'link.com/link',
-            githubLink: 'link.com/link'
         }
     ])
 
-    let selectedProject = projects.filter(project => project.title)
+    const selectedProject = projects.filter(project => project.title);
+
+    const chooseProject = (project, i) => {
+        setCurrentProject({...project, index: i});
+    }
 
     return (
         <div>
-            {selectedProject.map(project => <p>{project.title, project.deployLink, project.githubLink}</p>)}
-            {/* {project.map((photo, i) => (
-                <img
-                    src={require(`../../assets/project-img/${photo}/${i}.jpg`)}
-                    alt={photo.i}
-                    key={photo.i}
-                    />
-            ))} */}
+            <div>
+            {selectedProject.map((image, i) => (
+                <img className="photo" 
+                src={require(`../../assets/project-img/${i}.png`)}
+                alt={image.name}
+                onClick={() => chooseProject(image, i)}
+                key={image.name}
+                />
+            ))}
+            </div>
         </div>
-    );    
+    );
 }
 
 export default ProjectList;

@@ -2,11 +2,10 @@ import React from 'react';
 import ProjectList from '../ProjectList';
 
 function Project(props) {
-    // const { selectedProject } = props;
+    const { currentProject } = props;
     return (
         <section>
-        <h1>this is where a project name goes.</h1>
-            <ProjectList />
+        <ProjectList currentProject={currentProject} />
         </section>
     )
 }

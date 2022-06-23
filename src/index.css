@@ -53,6 +53,11 @@ a:hover {
   display: inline-block;
 }
 
+.photo {
+  max-width: 200px;
+  max-height: 500px;
+}
+
 .contact-div {
   text-align: center;
 
