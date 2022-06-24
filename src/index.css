@@ -53,9 +53,15 @@ a:hover {
   display: inline-block;
 }
 
+.proj-div {
+  display: flex;
+}
+
 .photo {
-  max-width: 200px;
-  max-height: 500px;
+  max-width: 400px;
+  max-height: 700px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .contact-div {
