@@ -18,17 +18,17 @@ function Contact() {
             <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="contact-name">
                     <label htmlFor="name">name:</label>
-                    <input type="text" defaultValue={name} onChange={handleChange} name="name" />
+                    <input className="name-input" type="text" defaultValue={name} onChange={handleChange} name="name" />
                 </div>
                 <div className="contact-email">
                     <label htmlFor="email">email address:</label>
-                    <input type="email" defaultValue={email} onChange={handleChange} name="email" />
+                    <input className="email-input" type="email" defaultValue={email} onChange={handleChange} name="email" />
                 </div>
                 <div className="contact-message">
                     <label htmlFor="message">message:</label>
-                    <textarea name="message" defaultValue={message} onChange={handleChange} rows="4" />
+                    <textarea className="message-input" name="message" defaultValue={message} onChange={handleChange} rows="10" />
                 </div>
-                <button type="submit">submit</button>
+                <button className="form-button" type="submit">submit</button>
             </form>
         </div>
     );
