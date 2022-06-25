@@ -55,13 +55,27 @@ a:hover {
 
 .proj-div {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.proj-info {
+  margin-left: 40px;
+}
+
+.proj-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.proj-link {
+  font-style: italic;
 }
 
 .photo {
   max-width: 400px;
   max-height: 700px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 .contact-div {
