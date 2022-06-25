@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ProjectList = (proj) => {
-    const [currentProject, setCurrentProject] = useState();
+    const [project, setCurrentProject] = useState();
     const [showDiv, setShowDiv] = useState(false);
     const [projects] = useState([
         {
@@ -29,21 +29,20 @@ const ProjectList = (proj) => {
     const chooseProject = (project, i) => {
         setCurrentProject({...project, index: i});
         setShowDiv(true);
-        renderInfo(project);
-        // return (<div>{project}</div>);
-        // return console.log(project);
+        renderDiv(project);
     }
 
-    const renderInfo = (project) => {
-        console.log(project);
-        return (
-            <div>rendering a div here!</div>
-        )
+
+    function renderDiv(project) {
+        return (<div className="proj-info">
+            <p>{project.title}</p>
+            <p>{project.deployLink}</p>
+            <p>{project.githubLink}</p>
+            </div>)
     }
 
     return (
         <div>
-            {showDiv}
             <div className="proj-div">
             {selectedProject.map((image, i) => (
                 <img className="photo" 
@@ -54,7 +53,7 @@ const ProjectList = (proj) => {
                 />
             ))}
             </div>
-            <div className="proj-info"></div>
+            {showDiv && renderDiv(project)}
         </div>
     );
 }
