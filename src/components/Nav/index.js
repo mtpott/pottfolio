@@ -42,17 +42,17 @@ function Nav() {
     <section>
         <nav className='nav-bar'>
         <ul className="nav-ul">
-            <li className="nav-link">
-                <a href="#about" onClick={handleAboutClick}>about</a>
+            <li>
+                <a className="nav-link" href="#about" onClick={handleAboutClick}>about</a>
             </li>
-            <li className="nav-link">
-                <a href="#project" onClick={handleContactClick}>projects</a>
+            <li>
+                <a className="nav-link" href="#project" onClick={handleContactClick}>projects</a>
             </li>
-            <li className="nav-link">
-                <a href="#resume" onClick={handleResumeClick}>resume</a>
+            <li>
+                <a className="nav-link" href="#resume" onClick={handleResumeClick}>resume</a>
             </li>
-            <li className="nav-link">
-                <a href="#contact" onClick={handleProjectClick}>contact</a>
+            <li>
+                <a className="nav-link" href="#contact" onClick={handleProjectClick}>contact</a>
             </li>
         </ul>
         </nav>

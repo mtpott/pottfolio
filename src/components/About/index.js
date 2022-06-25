@@ -11,6 +11,7 @@ function About() {
                 <a href="mailto:mtpott23@gmail.com">mtpott23@gmail.com</a>
                 <p>(919)906-8451</p>
 
+        <div>need to add a photo!</div>
         </div>
     )
 }
