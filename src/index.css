@@ -1,13 +1,22 @@
 * {
   font-family: 'Signika', sans-serif;
-  background-color: #edf0da;
+  background-color: #c6cfc8;
   color: #363537;
 }
 
+.header-section {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .header-name {
-  font-size: 25px;
-  color: #A07178;
+  font-size: 35px;
+  color: #122C34;
   display: inline;
+  font-style: italic;
+}
+
+.header-name:hover {
+  border-radius: 25% 50% 10%;
 }
 
 .nav-ul {
@@ -41,6 +50,7 @@ a:hover {
 .container {
   display: flex;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 .about-div {
