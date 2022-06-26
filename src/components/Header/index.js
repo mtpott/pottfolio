@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Nav from '../Nav';
 
 function Header(props) {
     
     return (
         <section className='header-section'>
-            <a href="/pottfolio" className='header-name'>pottfolio</a>
+            <h1>pottfolio</h1>
             <Nav />
         </section>
     );
