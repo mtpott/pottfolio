@@ -38,21 +38,30 @@ a:hover {
   opacity: 75%;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .about-div {
-  max-width: 700px;
   display: block;
+  margin-top: 10px;
   text-align: left;
   margin-left: 20px;
+  width: 50%;
 }
 
 .about {
   font-size: 20px;
-  display: inline-block;
+}
+
+.photo {
+  float: right;
+  width: 50%;
 }
 
 .about-pg {
   font-size: 18px;
-  display: inline-block;
 }
 
 .proj-div {
@@ -95,8 +104,9 @@ a:hover {
 }
 
 .resume-link {
-  font-size: 18px;
+  font-size: 30px;
   margin-left: 40px;
+  padding-left: 20px;
 }
 
 .resume-prof {
