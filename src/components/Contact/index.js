@@ -5,7 +5,7 @@ function Contact() {
     const { name, email, message } = formState;
 
     function handleChange(e) {
-        setFormState({ ...formState, [e.target.name]: e.target.value})
+        setFormState({...formState, [e.target.name]: e.target.value });
     }
 
     function handleSubmit(e) {
