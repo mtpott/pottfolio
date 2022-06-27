@@ -10,7 +10,7 @@
 A screenshot of the final project:
 
 ![project-final-image](./src/assets/project-final-image.png)
-*here's what the 'project' component looks like!
+*here's what the 'project' component looks like!!
 
 ## Description
 Our challenge this week was to create a single page application (SPA) using React. Here, we were able to showcase the culmination of our skills and learn more about React at the same time! By utilizing React's components, you can click on the links in the nav bar, which will render that specific component, and you never leave the page. This is an awesome way to optimize the user's experience, and makes total sense for sites that scale up exponentially.
