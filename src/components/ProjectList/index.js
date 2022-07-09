@@ -30,9 +30,9 @@ const ProjectList = (proj) => {
         },
         {
             id: '5',
-            title: 'MVC Tech Blog',
-            deployLink: 'https://protected-thicket-04553.herokuapp.com/',
-            githubLink: 'https://github.com/mtpott/mvc-tech-blog'
+            title: 'Echo Chamber',
+            deployLink: 'https://echoechochamber.herokuapp.com/',
+            githubLink: 'https://github.com/mtpott/echo-chamber'
         },
         {
             id: '6',
