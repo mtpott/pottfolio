@@ -30,7 +30,7 @@ const ProjectList = (proj) => {
         },
         {
             id: '5',
-            title: 'Echo Chamber',
+            title: 'Echo-Chamber',
             deployLink: 'https://echoechochamber.herokuapp.com/',
             githubLink: 'https://github.com/mtpott/echo-chamber'
         },
