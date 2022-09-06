@@ -5,7 +5,7 @@ function Header(props) {
     
     return (
         <section className='header-section'>
-            <a href="/" className='header-name'>pottfolio</a>
+            <a href="/pottfolio" className='header-name'>pottfolio</a>
             <Nav />
         </section>
     );
