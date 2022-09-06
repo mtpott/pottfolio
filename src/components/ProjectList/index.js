@@ -30,9 +30,9 @@ const ProjectList = (proj) => {
         },
         {
             id: '5',
-            title: 'MVC Tech Blog',
-            deployLink: 'https://protected-thicket-04553.herokuapp.com/',
-            githubLink: 'https://github.com/mtpott/mvc-tech-blog'
+            title: 'README Generator',
+            deployLink: 'https://drive.google.com/file/d/1X9gLzg70zcqMbf0jeZXDTd4R5c5jaTe4/view',
+            githubLink: 'https://github.com/mtpott/readme-generator'
         },
         {
             id: '6',
