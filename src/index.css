@@ -88,6 +88,11 @@ a:hover {
 .proj-title {
   font-size: 25px;
   margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.proj-desc {
+  font-size: 13px;
 }
 
 .proj-link {
@@ -96,7 +101,7 @@ a:hover {
 
 .photo {
   max-width: 400px;
-  max-height: 700px;
+  max-height: 500px;
   margin-bottom: 10px;
 }
 
@@ -183,7 +188,7 @@ li {
 
 .footer {
   position: fixed;
-  left: 0;
+  /* left: 0; */
   bottom: 0;
   right: 0;
   height: 45px;

@@ -8,37 +8,43 @@ const ProjectList = (proj) => {
             id: '1',
             title: 'Run-Buddy',
             deployLink: 'https://mtpott.github.io/run-buddy/',
-            githubLink: 'https://github.com/mtpott/run-buddy'
+            githubLink: 'https://github.com/mtpott/run-buddy',
+            description: 'front end for a website that offers fitness training services. built with: HTML, CSS.'
         },
         {
             id: '2',
-            title: 'Find-A-Pet',
+            title: 'Find-A-Pet | Contributor',
             deployLink: 'https://scottietee.github.io/Find-A-Pet/',
-            githubLink: 'https://github.com/ScottieTee/Find-A-Pet'
+            githubLink: 'https://github.com/ScottieTee/Find-A-Pet',
+            description: 'front end application that helps animals find their forever homes. built with: HTML, CSS, JavaScript, PetFinder API.'
         },
         {
             id: '3',
-            title: 'Coin-Vault',
+            title: 'Coin-Vault | Contributor',
             deployLink: 'https://the-coin-vault.herokuapp.com/',
-            githubLink: 'https://github.com/ApolloSolo/Coin-Vault'
+            githubLink: 'https://github.com/ApolloSolo/Coin-Vault',
+            description: 'full stack application that simulates the purchase and sale of cryptocurrency. built with: JavaScript, Handlebars, Bootstrap, Node.js, Express, SQL/Sequelize, Coinranking API.'
         },
         {
             id: '4',
             title: 'Express Notetaker',
             deployLink: 'https://cryptic-crag-74579.herokuapp.com/',
-            githubLink: 'https://github.com/mtpott/express-notetaker'
+            githubLink: 'https://github.com/mtpott/express-notetaker',
+            description: 'full stack application used to create and save notes. built with: HTML, CSS, JavaScript, Express.js.'
         },
         {
             id: '5',
             title: 'README Generator',
             deployLink: 'https://drive.google.com/file/d/1X9gLzg70zcqMbf0jeZXDTd4R5c5jaTe4/view',
-            githubLink: 'https://github.com/mtpott/readme-generator'
+            githubLink: 'https://github.com/mtpott/readme-generator',
+            description: 'a command-line application designed to make README creation simple and concise. built with: JavaScript, Node.js.'
         },
         {
             id: '6',
             title: 'SQL Employee Tracker',
             deployLink: 'https://drive.google.com/file/d/11nDN0Pnw8JIlp_4gk7xFv-6-PCJS1exy/view',
-            githubLink: 'https://github.com/mtpott/sql-tracker'
+            githubLink: 'https://github.com/mtpott/sql-tracker',
+            description: 'a command-line application created to manage an employee database. built with: JavaScript, MySQL.'
         }
     ])
 
@@ -54,9 +60,10 @@ const ProjectList = (proj) => {
     function renderDiv(project) {
         return (<div className="proj-info">
             <p className="proj-title">{project.title}</p>
-            <a className="proj-link" target="_blank" rel="noopener noreferrer" href={project.deployLink} path="/:deployLink">visit the app</a>
+            <p className="proj-desc">{project.description}</p>
+            <a className="proj-link" target="_blank" rel="noopener noreferrer" href={project.deployLink} path="/:deployLink"> click here to visit the app</a>
             <br></br>
-            <a className="proj-link" target="_blank" rel="noopener noreferrer" href={project.githubLink} path="/:githubLink">visit the repository</a>
+            <a className="proj-link" target="_blank" rel="noopener noreferrer" href={project.githubLink} path="/:githubLink"> click here to visit the repository</a>
             </div>)
     }
 
