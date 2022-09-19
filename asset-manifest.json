@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pottfolio/static/css/main.b18ec2d7.css",
-    "main.js": "/pottfolio/static/js/main.400d7aaa.js",
+    "main.css": "/pottfolio/static/css/main.6ecb2dd8.css",
+    "main.js": "/pottfolio/static/js/main.a2b142d9.js",
     "static/js/787.5aa0047c.chunk.js": "/pottfolio/static/js/787.5aa0047c.chunk.js",
     "static/media/2.png": "/pottfolio/static/media/2.9070fbc573b9c9079e1a.png",
     "static/media/0.png": "/pottfolio/static/media/0.298e9854a8bffe8c5b89.png",
@@ -11,12 +11,12 @@
     "static/media/1.png": "/pottfolio/static/media/1.8fde6dc06a5e5b103346.png",
     "static/media/3.png": "/pottfolio/static/media/3.0a3f2090b8c7c94bd035.png",
     "index.html": "/pottfolio/index.html",
-    "main.b18ec2d7.css.map": "/pottfolio/static/css/main.b18ec2d7.css.map",
-    "main.400d7aaa.js.map": "/pottfolio/static/js/main.400d7aaa.js.map",
+    "main.6ecb2dd8.css.map": "/pottfolio/static/css/main.6ecb2dd8.css.map",
+    "main.a2b142d9.js.map": "/pottfolio/static/js/main.a2b142d9.js.map",
     "787.5aa0047c.chunk.js.map": "/pottfolio/static/js/787.5aa0047c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b18ec2d7.css",
-    "static/js/main.400d7aaa.js"
+    "static/css/main.6ecb2dd8.css",
+    "static/js/main.a2b142d9.js"
   ]
 }
